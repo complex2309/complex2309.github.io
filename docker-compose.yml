@@ -1,0 +1,9 @@
+services:
+  node:
+    build: .
+    container_name: kermano-node
+    ports:
+      - "18018:18018"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
